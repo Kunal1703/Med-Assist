@@ -1,0 +1,125 @@
+body {
+    box-sizing: border-box;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.emergency-glow {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+    animation: emergencyPulse 1.5s infinite;
+}
+
+@keyframes emergencyPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(239, 68, 68, 0.8);
+    }
+}
+
+/* Add custom button classes for easier reuse */
+.btn-login,
+.btn-register,
+.btn-emergency,
+.btn-demo,
+.btn-dashboard,
+.btn-get-started,
+.btn-contact {
+    transition: all 0.3s ease;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+}
+
+.btn-login {
+    background: white;
+    color: #4f46e5;
+}
+
+.btn-register {
+    background: #1e40af;
+    color: white;
+}
+
+.btn-emergency {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-demo.btn-blue {
+    background: #4f46e5;
+    color: white;
+}
+
+.btn-demo.btn-green {
+    background: #059669;
+    color: white;
+}
+
+.btn-demo.btn-red {
+    background: #b91c1c;
+    color: white;
+}
+
+.btn-dashboard {
+    background: linear-gradient(to right, #4f46e5, #8b5cf6);
+    color: white;
+}
+
+.btn-get-started {
+    background: white;
+    color: #4f46e5;
+}
+
+.btn-contact {
+    border: 2px solid white;
+    color: white;
+}
