@@ -14,6 +14,7 @@ function handleRegister() {
                     Already have an account? <span class="text-indigo-600 cursor-pointer" onclick="closeModal(); handleLogin();">Sign in here</span>
                 </p>
             `);
+            
         }
 
         function handleEmergency() {
