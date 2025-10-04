@@ -1,22 +1,22 @@
-// function checkStrength(password, type) {
-//     const bar = document.getElementById(type + "-strength-bar");
-//     const text = document.getElementById(type + "-strength-text");
+function checkStrength(password, type) {
+    const bar = document.getElementById(type + "-strength-bar");
+    const text = document.getElementById(type + "-strength-text");
 
-//     let strength = 0;
-//     if (password.length >= 6) strength++;
-//     if (password.match(/[A-Z]/)) strength++;
-//     if (password.match(/[0-9]/)) strength++;
-//     if (password.match(/[^A-Za-z0-9]/)) strength++;
-//     if (password.length >=8) strength++;
+    let strength = 0;
+    if (password.length >= 6) strength++;
+    if (password.match(/[A-Z]/)) strength++;
+    if (password.match(/[0-9]/)) strength++;
+    if (password.match(/[^A-Za-z0-9]/)) strength++;
+    if (password.length >=8) strength++;
 
-//     let width = ["10%", "30%", "50%", "75%", "100%"][strength] || "0%";
-//     let colors = ["#ef4444", "#f97316", "#eab308", "#22c55e", "#16a34a"];
-//     let labels = ["Very Weak", "Weak", "Medium", "Strong", "Very Strong"];
+    let width = ["10%", "30%", "50%", "75%", "100%"][strength] || "0%";
+    let colors = ["#ef4444", "#f97316", "#eab308", "#22c55e", "#16a34a"];
+    let labels = ["Very Weak", "Weak", "Medium", "Strong", "Very Strong"];
 
-//     bar.style.width = width;
-//     bar.style.backgroundColor = colors[strength - 1] || "#d1d5db";
-//     text.innerText = password ? `Strength: ${labels[strength - 1] || "Too short"}` : "Enter password...";
-// }
+    bar.style.width = width;
+    bar.style.backgroundColor = colors[strength - 1] || "#d1d5db";
+    text.innerText = password ? `Strength: ${labels[strength - 1] || "Too short"}` : "Enter password...";
+}
 
 function handleRegister() {
             showModal(`
